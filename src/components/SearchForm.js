@@ -18,7 +18,7 @@ export class SearchForm extends Component {
         // fetch(`https://api.giphy.com/v1/gifs/search&q=${inputMovie}`)
         .then(res => res.json())
         .then(result => {
-            const { Search, totalResults } = result
+            const { Search = []} = result
             this.props.onResults(Search)
         })
     }
