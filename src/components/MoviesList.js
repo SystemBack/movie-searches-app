@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Movie } from "./Movie";
 import PropTypes from 'prop-types';
+import { BackToHomeButton } from "./BackToHome";
 
 export class MoviesList extends Component {
     static propTypes = {
